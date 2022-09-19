@@ -1,0 +1,435 @@
+:root{
+    --f64: 64px;
+    --f40: 40px;
+    --f25: 25px;
+    --main-color: #CD4631;
+    --sec-color: #F7EDE8; 
+    --tri-color: #EDF3F7;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.pink{
+    color: var(--main-color);
+}
+
+h1{
+    font-size: 65px;
+}
+
+h2{
+    font-size: 45px;
+}
+h3{
+    font-size: 45px;
+}
+
+h4{
+    font-size: 18px;
+}
+
+h6{
+    font-size: 16px;
+}
+
+.text-break{
+    display: block;
+}
+
+.mymb-25{
+  margin-bottom: 25px;
+}
+
+/* Section Styles */
+
+.talk,
+.supported,
+.topic,
+.listeners,
+.benefits,
+.sponsor,
+.contact{
+    padding: 80px 0px;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0px auto;
+}
+
+header{
+    background-color: var(--sec-color);
+    padding: 10px 0px;
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrapper ul {
+    display: flex;
+    gap: 25px;
+}
+
+.header-wrapper ul li a{
+    color: #000000;
+}
+
+.nav-link-btn{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.header-btn{
+    display: flex;
+    gap: 25px;
+}
+
+.my-btn{
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #000000;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    transition: all .30s;
+    display: inline-block;
+}
+
+.my-btn.btn-border{
+    background-color: transparent;
+}
+.my-btn.btn-solid{
+    color: #ffffff !important;
+    box-shadow: 5px 5px 0px 0px #B9B2AE;
+}
+.my-btn:hover{
+    background-color: var(--main-color) !important;
+    box-shadow: 2px 2px 0px 0px #B9B2AE;
+}
+.my-btn.btn-border:hover{
+    color: #ffffff;
+}
+
+/* Section spacings */
+
+/* Section spacings */
+
+/* Section banner Start */
+.banner{
+    text-align: center;
+    padding: 100px 0px;
+    position: relative;
+    background-color: var(--sec-color);
+}
+
+.banner h1{
+    font-size:var(--f64);
+    margin-bottom: 30px;
+}
+
+.banner p{
+    margin-bottom: 30px;
+}
+
+.banner h1 span{
+    display: block;
+    
+}
+
+.banner .float-img img{
+    position: absolute;
+}
+
+.banner .float-img img:first-child{
+    top: 100px;
+    left: 0px;
+}
+.banner .float-img img:last-child{
+    top: 100px;
+    right: 35px;
+}
+/* Section banner End */
+
+/* Banner-sec Start */
+.banner-img-sec{
+    padding: 80px 0px;
+    background-color: var(--sec-color);
+}
+.banner-sec-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.banner-sec-wrapper>div{
+    width: 30%;
+}
+.banner-sec-wrapper>div img{
+    width: 100%;
+}
+/* Banner-sec End */
+
+
+/* supported Start */
+.supported{
+    background-color: var(--sec-color);
+}
+.supported-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.supported-wrapper>div:first-child{
+    /* flex-grow: 1; */
+    /* width: 30%; */
+    flex-basis: 30%;
+}
+.supported-wrapper>div:last-child{
+    /* flex-grow: 2; */
+    /* width: 70%; */
+    flex-basis: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+/* supported End */
+
+/* Talk Start */
+.talk{
+    position: relative;
+}
+
+.talk .float-img{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.talk-wrappers{
+    display: flex;
+    gap: 30px;
+}
+
+.section-heading {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section-heading span{
+    display: block;
+}
+
+.talk-wrappers img{
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+}
+.talk-wrappers>div{
+    width: 50%;
+    text-align: center;
+}
+
+.talk-wrappers>div img{
+    margin-bottom: 25px;
+}
+/* Talk End */
+
+/* Topic Start  */
+.topic{
+    text-align: center;
+    position: relative;
+}
+.topic-wrapper{
+    background-color: var(--sec-color);
+    padding: 50px 0px;
+    position: relative;
+}
+.topic-manager{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.topic-manager img{
+    width: 40px;
+}
+
+.topic-float-img>img:first-child{
+    position: absolute;
+    top: -45px;
+    right: -45px;
+}
+.topic-float-img>img:last-child{
+    position: absolute;
+    bottom: 30px;
+    left: -45px;
+}
+
+.topic-manager>div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+/* Topic End */
+
+.listeners{
+    background-color: #EDF3F7;
+}
+
+/* Sponser Start */
+
+.my-badge span {
+    background-color: #CD4631;
+    font-size: 12px;
+    padding: 3px 5px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.sponser-wrapper{
+    position: relative;
+}
+
+.sponser-side-img img:first-child{
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    z-index: -1;
+}
+.sponser-side-img img:last-child{
+    position: absolute;
+    bottom: 50px;
+    left: -50px;
+    z-index: -1;
+}
+
+/* Sponser End */
+
+
+/* Contact Start */
+.contact{
+    background-color: #D66957;
+    color: #ffffff;
+}
+.contact form {
+    max-width: 600px;
+    margin: 0px auto;
+}
+/* Contact End */
+
+/* Available Start */
+.available{
+    display: flex;
+    align-items: center;
+    padding: 80px 0px;
+    background-color: #EDF3F7;
+}
+.available .beta{
+    border: 1px solid #CD4631;
+    padding: 2px;
+}
+/* Available End */
+
+
+@media screen and (min-width: 1400px){ 
+    .test-responsive{
+        background-color: green;
+    }
+}
+
+/* Coming down steps */
+
+@media screen and (min-width: 1200px) {
+    .available{
+        background: url("../images/available/bg.png") no-repeat center;
+        background-size: cover;
+        height: 1000px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .test-responsive{
+        background-color: rgb(128, 0, 0);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .float-img img{
+        width: 150px;
+        object-fit: cover;
+    }
+    .float-img img:last-child{
+        width: 100px;
+        object-fit: cover;
+        right: 0px !important;
+    }
+    .header-btn{
+        display: none;
+    }
+    .banner h1{
+        font-size: var(--f40);
+    }
+    .banner-sec-wrapper > div {
+        width: 100%;
+    }
+
+    .supported-wrapper,.supported-wrapper>div:last-child {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        
+    }
+    .supported-wrapper>div:last-child img{
+        width: 150px;
+        gap: 20px;
+       
+    }
+    .supported-wrapper>div:first-child,
+    .supported-wrapper>div:last-child{
+        flex-basis: 100%;
+    }
+
+    .talk-wrappers{
+        flex-direction: column;
+        text-align: center;
+    }
+    .talk-wrappers>div{
+        width: 100%;
+    }
+    .sponser-side-img,.topic-float-img{
+        display: none;
+    }
+}
+@media screen and (max-width: 576px){
+    .float-img img{
+        width: 80px;
+    }
+    .float-img img:last-child{
+        width: 80px;
+    }
+}
